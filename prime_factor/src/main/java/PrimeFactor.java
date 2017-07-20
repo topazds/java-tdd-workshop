@@ -10,7 +10,14 @@ public class PrimeFactor {
         if(number>=4){
             int mydata = number/2;
             result.add(2);
-            result.add(mydata);
+            if(mydata==4){
+                int mydata2 = mydata/2;
+                result.add(2);
+                result.add(mydata2);
+            }else{
+                result.add(mydata);
+            }
+
         }
         return result;
     }
