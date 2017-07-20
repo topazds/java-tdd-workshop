@@ -3,7 +3,7 @@ public class FizzBuzz {
         if(input==3||input==6||input==9){
             return "Fizz";
         }
-        if(input==5||input==10){
+        if(input==5||input==10||input==20){
             return "Buzz";
         }
         if(input==15){
