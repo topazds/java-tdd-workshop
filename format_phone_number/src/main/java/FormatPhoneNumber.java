@@ -18,6 +18,7 @@ public class FormatPhoneNumber {
     }
 
     public String solution(String input) {
-        return null;
+        String phoneNumberFormat = String.format("%s-%s-%s",input.substring(0,3),input.substring(3,6),input.substring(6,9));
+        return phoneNumberFormat;
     }
 }
