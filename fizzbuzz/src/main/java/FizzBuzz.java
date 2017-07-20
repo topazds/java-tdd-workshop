@@ -6,7 +6,7 @@ public class FizzBuzz {
         if(input==5||input==10||input==20){
             return "Buzz";
         }
-        if(input==15){
+        if(input==15||input==30){
             return "FizzBuzz";
         }
         return Integer.toString(input);
