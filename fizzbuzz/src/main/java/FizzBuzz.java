@@ -1,13 +1,13 @@
 public class FizzBuzz {
     public String say(int input) {
-        if(input==3||input==6||input==9){
-            return "Fizz";
-        }
-        if(input==5||input==10||input==20){
-            return "Buzz";
-        }
-        if(input==15||input==30){
+        if(input%15==0){
             return "FizzBuzz";
+        }else
+        if(input%5==0){
+            return "Buzz";
+        }else
+        if(input%3==0){
+            return "Fizz";
         }
         return Integer.toString(input);
     }
