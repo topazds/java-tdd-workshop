@@ -12,10 +12,13 @@ public class MyRange {
     }
 
     public int getFirstNumber(String input) {
-        return 0;
+        return input.charAt(1)-48;
     }
 
     public boolean isก้ามปูเปิด(String input) {
+        if(input.startsWith("[")){
+            return true;
+        }
         return false;
     }
 }

@@ -25,9 +25,9 @@ public class FormatPhoneNumber {
         int start = 0;
         int end = 3;
         for (int i = 0; i < count / 3; i++) {
-            if (count % 3 == 1&&i==((count/3)-1)) {
-                phoneNumberFormat += String.format("%s-%s-", data.substring(start, end-1),data.substring(start+2, end+1));
-            }else{
+            if (count % 3 == 1 && i == ((count / 3) - 1)) {
+                phoneNumberFormat += String.format("%s-%s-", data.substring(start, end - 1), data.substring(start + 2, end + 1));
+            } else {
                 phoneNumberFormat += String.format("%s-", data.substring(start, end));
             }
             start += 3;
